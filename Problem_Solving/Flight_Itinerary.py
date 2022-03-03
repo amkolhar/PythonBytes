@@ -36,14 +36,14 @@ def flight_order(flight_list, origin, flight_route=None):
         if origin == flight[0]:
             possible_flight.append(flight)
 
-    if possible_flight == []:
+    if not possible_flight:
         return 'Null'
 
     possible_flight.sort()
 
     flight_taken = possible_flight[0]
 
-    if flight_route == []:
+    if not flight_route:
         flight_route = [origin]
 
     flight_route.append(flight_taken[1])

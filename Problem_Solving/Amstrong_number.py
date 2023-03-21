@@ -31,4 +31,4 @@ def is_armstrong(number):
 
 
 if __name__ == "__main__":
-    print(is_armstrong(number=124))
+    print( is_armstrong(number=124))
